@@ -11,14 +11,20 @@ What is the solution to your captcha?
 """
 
 
-def captcha_solver_part_1(input_file):
-    sum_ = 0
+def read_digits(input_file):
     digits = list()
     # read in file and go character by character to create list
     with open(input_file) as file:
         for line in file:
             for c in line:
                 digits.append(int(c))
+    return digits
+
+
+def captcha_solver_part_1(input_file):
+    sum_ = 0
+    digits = read_digits(input_file)
+
     i = 0
     for i in range(len(digits)):
         # account for circular, if at last index, check 0 not i + 1
@@ -47,12 +53,7 @@ For example:
 
 def captcha_solver_part_2(input_file):
     sum_ = 0
-    digits = list()
-    # read in file and go character by character to create list
-    with open(input_file) as file:
-        for line in file:
-            for c in line:
-                digits.append(int(c))
+    digits = read_digits(input_file)
 
     # now there is a step term
     # can assume even input per problem
