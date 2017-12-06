@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7927077e-503f-4661-b475-6840dec97053" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day6.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/day6_input.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/day3.py" afterPath="$PROJECT_DIR$/day3.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -20,7 +21,7 @@
       <file leaf-file-name="day1.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day1.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
+            <state relative-caret-position="0">
               <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
               <folding />
             </state>
@@ -30,8 +31,8 @@
       <file leaf-file-name="day2.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="833">
-              <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="15" selection-end-column="22" />
               <folding />
             </state>
           </provider>
@@ -47,7 +48,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="day5.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="day5.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/day5.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="1326">
@@ -57,11 +58,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="day5_input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day5_input.txt">
+      <file leaf-file-name="day6.py" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/day6.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17901">
-              <caret line="1053" column="4" lean-forward="false" selection-start-line="1053" selection-start-column="4" selection-end-line="1053" selection-end-column="4" />
+            <state relative-caret-position="1505">
+              <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="day6_input.txt" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/day6_input.txt">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="61" lean-forward="false" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
               <folding />
             </state>
           </provider>
@@ -72,26 +83,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="323">
               <caret line="19" column="20" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="19" selection-end-column="20" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="day1_input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day1_input.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="2052" lean-forward="false" selection-start-line="0" selection-start-column="2052" selection-end-line="0" selection-end-column="2052" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="day2_input.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/day2_input.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="15" column="63" lean-forward="false" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
               <folding />
             </state>
           </provider>
@@ -120,6 +111,8 @@
         <option value="$PROJECT_DIR$/day5_input.txt" />
         <option value="$PROJECT_DIR$/day5.py" />
         <option value="$PROJECT_DIR$/day3.py" />
+        <option value="$PROJECT_DIR$/day6_input.txt" />
+        <option value="$PROJECT_DIR$/day6.py" />
       </list>
     </option>
   </component>
@@ -177,7 +170,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.day3">
+  <component name="RunManager" selected="Python.day6">
     <configuration name="day1" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -246,18 +239,37 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
     </configuration>
-    <list size="4">
+    <configuration name="day6" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="advent-of-code" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/day6.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+    </configuration>
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Python.day1" />
       <item index="1" class="java.lang.String" itemvalue="Python.day2" />
       <item index="2" class="java.lang.String" itemvalue="Python.day3" />
       <item index="3" class="java.lang.String" itemvalue="Python.day5" />
+      <item index="4" class="java.lang.String" itemvalue="Python.day6" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="Python.day3" />
-        <item index="1" class="java.lang.String" itemvalue="Python.day5" />
-        <item index="2" class="java.lang.String" itemvalue="Python.day2" />
-        <item index="3" class="java.lang.String" itemvalue="Python.day1" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Python.day6" />
+        <item index="1" class="java.lang.String" itemvalue="Python.day3" />
+        <item index="2" class="java.lang.String" itemvalue="Python.day5" />
+        <item index="3" class="java.lang.String" itemvalue="Python.day2" />
+        <item index="4" class="java.lang.String" itemvalue="Python.day1" />
       </list>
     </recent_temporary>
   </component>
@@ -276,14 +288,13 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19427083" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32875264" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -308,14 +319,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/day1.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day2.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="833">
@@ -644,50 +647,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/day2_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="63" lean-forward="false" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/day1.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="833">
-          <caret line="49" column="0" lean-forward="false" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day4.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="20" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="19" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day1_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="2052" lean-forward="false" selection-start-line="0" selection-start-column="2052" selection-end-line="0" selection-end-column="2052" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/day5_input.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17901">
-          <caret line="1053" column="4" lean-forward="false" selection-start-line="1053" selection-start-column="4" selection-end-line="1053" selection-end-column="4" />
+          <caret line="14" column="19" lean-forward="false" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -704,6 +667,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1326">
           <caret line="78" column="0" lean-forward="true" selection-start-line="78" selection-start-column="0" selection-end-line="78" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="4" lean-forward="true" selection-start-line="6" selection-start-column="4" selection-end-line="15" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day2_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="63" lean-forward="false" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day1_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="2052" lean-forward="false" selection-start-line="0" selection-start-column="2052" selection-end-line="0" selection-end-column="2052" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day5_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="573">
+          <caret line="1053" column="4" lean-forward="false" selection-start-line="1053" selection-start-column="4" selection-end-line="1053" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day4.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="20" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="19" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day6_input.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="61" lean-forward="false" selection-start-line="0" selection-start-column="61" selection-end-line="0" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/day6.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1505">
+          <caret line="117" column="0" lean-forward="true" selection-start-line="117" selection-start-column="0" selection-end-line="117" selection-end-column="0" />
           <folding />
         </state>
       </provider>
