@@ -80,43 +80,111 @@ Once a square is written, its value does not change. Therefore, the first few sq
 What is the first value written that is larger than your puzzle input?
 """
 
-"""
-Build graph??
 
-Order: E, NE, N, NW, W, SW, S, SE
-"""
+def expand_grid(spiral_grid):
+    original_size = len(spiral_grid)
+    new_size = original_size + 2
+    # insert a top and bottom row of zeroes
+    # insert leading and trailing zero
+    spiral_grid.insert(0, [0] * original_size)
+    spiral_grid.append([0] * original_size)
+    for i in range(new_size):
+        spiral_grid[i].insert(0, 0)
+        spiral_grid[i].append(0)
 
-
-class SpiralNode:
-    # directions N, S, E, W, NE, NW, SE, SW
-    # connections to other nodes, with direction as key
-
-    value = 0
-
-    connections = dict()
-
-    def add_connection(self, node, direction):
-        self.connections[direction] = node
-
-    def add_connection(self, direction):
-        self.connections[direction]
-
-    def get_value(self):
-        return self.value
-
-    def set_value(self, value):
-        self.value = value
-
-    def __init__(self, parent, direction):
-        self.parent = parent
-        self.add_connection(parent, direction)
-
-    # connect with parent nodes in reach
+    return spiral_grid
 
 
+def calculate_index(spiral_grid, i, j):
+
+    possible_moves = [[0, 1],
+                        [0, -1],
+                        [1, 0],
+                        [-1, 0],
+                        [1, 1],
+                        [1, -1],
+                        [-1, 1],
+                        [-1, -1]
+                    ]
+
+    sum_ = 0
+    # add adjacent indexies if in bounds
+    for move in possible_moves:
+        move_i = move[0] + i
+        move_j = move[1] + j
+
+        y_bound = True if 0 <= move_i and move_i <= len(spiral_grid) - 1 else False
+        x_bound = True if 0 <= move_j and move_j <= len(spiral_grid) - 1 else False
+
+        if y_bound and x_bound:
+            sum_ += spiral_grid[move_i][move_j]
+
+    return sum_
 
 
-def spiral_memory_part_2(input):
-    # create the first node, 1
-    genesis_node = SpiralNode()
-    genesis_node.set_value(1)
+def calculate_spiral_pattern(spiral_grid):
+
+    pattern = list()
+    # always start one up from bottom right
+    i = len(spiral_grid) - 2
+    j = len(spiral_grid) - 1
+
+    # go up
+    while i > 0:
+        pattern.append([i, j])
+        i += -1
+
+    # go left
+    while j > 0:
+        pattern.append([i, j])
+        j += -1
+
+    # go down
+    while i < len(spiral_grid) - 1:
+        pattern.append([i, j])
+        i += 1
+
+    # go right
+    while j <= len(spiral_grid) - 1:
+        pattern.append([i, j])
+        j += 1
+
+    return pattern
+
+
+def spiral_memory_part_2(target):
+
+    # starts with just 1
+    spiral_grid = [[1]]
+
+    # will need to stop once we've seen our target
+    largest_seen = spiral_grid[0][0]
+
+    build_grid = True
+
+    while build_grid:
+
+        # expand grid
+        spiral_grid = expand_grid(spiral_grid)
+
+
+        # fill it out
+        pattern = calculate_spiral_pattern(spiral_grid)
+
+        for pair in pattern:
+            i = pair[0]
+            j = pair[1]
+            spiral_grid[i][j] = calculate_index(spiral_grid, i, j)
+            largest_seen = spiral_grid[i][j] if spiral_grid[i][j] > largest_seen else largest_seen
+
+            if largest_seen > target:
+                build_grid = False
+                break
+
+
+
+    return largest_seen
+
+
+print(spiral_memory_part_2(347991))
+
