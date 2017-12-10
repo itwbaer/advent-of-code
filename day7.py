@@ -11,23 +11,61 @@ Before you're ready to help them, you need to make sure your information is corr
 """
 
 
+
 class ProgramNode:
 
-    def __init__(self, name, weight):
+    def __init__(self, name, weight, children_ids):
 
         self.id = name
         self.weight = weight
+        self.parent = None
+        self.children = list()
+        self.children_ids = children_ids
 
 
+NAME = 0
+WEIGHT = 1
+CHILDREN_INDICATOR = 2
+CHILDREN_START = 3
 
-def generate_tree(input_file):
-    appearance_count = dict()
+
+def read_node_input(input_file):
+    nodes = dict()
     with open(input_file) as file:
         for file_row in file:
-            # seperate by tabs, add to spreadsheet
-            new_row = file_row.strip().split('\t')
-            # convert to ints
-            new_row = list(map(int, new_row))
-            spreadsheet.append(new_row)
 
-    return spreadsheet
+            processed_row = file_row.split()
+            processed_row[WEIGHT] = processed_row[WEIGHT].replace("(", "")
+            processed_row[WEIGHT] = processed_row[WEIGHT].replace(")", "")
+
+            children_ids = list()
+            if len(processed_row) - 1 >= CHILDREN_INDICATOR:
+                for i in range(CHILDREN_START, len(processed_row)):
+
+                    processed_row[i] = processed_row[i].replace(",", "")
+                    children_ids.append(processed_row[i])
+
+            node = (ProgramNode(processed_row[NAME], int(processed_row[WEIGHT]), children_ids))
+            nodes[node.id] = node
+
+    return nodes
+
+
+def recursive_circus_part_1(input_file):
+
+    node_input = read_node_input(input_file)
+
+    # for every node, go through and assign all of the children's parent
+    for node_key in node_input:
+        node = node_input[node_key]
+        for child_id in node.children_ids:
+            node_input[child_id].parent = node
+
+
+    for node_key in node_input:
+        node = node_input[node_key]
+        if node.parent is None:
+            return node.id
+
+
+print(recursive_circus_part_1("day7_input.txt"))
